@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="42sp"
+            android:layout_height="42sp"
+            android:layout_marginLeft="12sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="12sp"
+            app:srcCompat="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:text="First Last, 0 mins"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/yourpost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your Post Here"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15sp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/likes"
+                    android:layout_width="28sp"
+                    android:layout_height="28sp"
+                    android:background="@drawable/likeselector"
+                    android:checked="false"
+                    android:onClick="onToggleClicked"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    android:id="@+id/numOfLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="0" />
+
+                <ImageButton
+                    android:id="@+id/ib"
+                    android:layout_width="28sp"
+                    android:layout_height="28sp"
+                    android:layout_weight="0"
+                    android:background="@drawable/outline_comment_black_18dp"/>
+
+                <TextView
+                    android:id="@+id/commentNum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

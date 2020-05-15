@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEvent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/activity_vertical_margin"
+                android:text="Create Event"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:ems="10"
+                android:layout_marginVertical="5dp"
+                android:inputType="textPersonName"
+                android:hint="Event Name" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText"
+                android:ems="10"
+                android:layout_marginVertical="5dp"
+                android:inputType="textPersonName"
+                android:hint="Location" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText2"
+                android:ems="10"
+                android:layout_marginVertical="5dp"
+                android:inputType="date"
+                android:hint="Event Date" />
+
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText3"
+                android:ems="10"
+                android:layout_marginVertical="5dp"
+                android:inputType="textPersonName"
+                android:hint="Event Start Time" />
+
+            <!--<Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@id/editText3"
+                android:layout_toRightOf="@id/editText4" />-->
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText4"
+                android:ems="10"
+                android:layout_marginVertical="5dp"
+                android:inputType="textPersonName"
+                android:hint="Event End Time" />
+
+            <!--<Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@id/editText4"
+                android:layout_toRightOf="@id/editText5"
+                android:text="AM" />-->
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText5"
+                android:layout_marginVertical="@dimen/activity_vertical_margin"
+                android:text="Event Type"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/textView2"
+                android:id="@+id/eventTypeGroup">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@id/textView2"
+                        android:text="College" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView2"
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@id/checkBox"
+                        android:text="RSO" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Company" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Other" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eventTypeGroup"
+                android:text="Giveaway Type"
+                android:layout_marginVertical="@dimen/activity_vertical_margin"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/giveawayTypeGroup"
+                android:layout_below="@id/textView3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView3"
+                        android:layout_weight="1"
+                        android:text="Food" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="T-shirts" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@id/checkBox5"
+                        android:text="General Swag" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Unique Items" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Information" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stickers" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Other" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginVertical="@dimen/activity_vertical_margin"
+                android:layout_below="@id/giveawayTypeGroup"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:hint="Event Description" />
+
+            <!--<Button
+                android:id="@+id/btnChoose"
+                android:text="Choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText6"/>
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:text="Upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText6"
+                android:layout_toRightOf="@id/btnChoose"/>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="selectImage"
+                android:layout_below="@id/btnChoose"
+                />-->
+
+            <Button
+                android:id="@+id/createbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText6"
+                android:text="Create Event" />
+
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

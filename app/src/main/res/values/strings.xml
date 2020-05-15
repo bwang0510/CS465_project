@@ -1,0 +1,82 @@
+<resources>
+
+    <!--Strings for Bottom Action Bar-->
+    <string name="app_name">FweeStuff</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_my_events">My Events</string>
+    <string name="title_settings">Settings</string>
+
+    <!--Strings for Search Fragment-->
+    <string name="search_bar">Search for an event...</string>
+    <string name="event_type">Event Type</string>
+    <string name="company_event_type">Company</string>
+    <string name="rso_event_type">RSO</string>
+    <string name="campus_wide_event_type">Campus-wide</string>
+
+    <string name="giveaway_type">Giveaway Type</string>
+    <string name="food_type">Food</string>
+    <string name="tshirt_type">T-Shirts</string>
+    <string name="general_swag_type">General Swag</string>
+    <string name="unique_items_type">Unique Items</string>
+    <string name="information_type">Information</string>
+    <string name="stickers_type">Stickers</string>
+
+    <string name="event_day_type">Event Day</string>
+    <string name="today_type">Today</string>
+    <string name="tomorrow_type">Tomorrow</string>
+    <string name="this_week_type">This Week</string>
+    <string name="this_month_type">This Month</string>
+
+    <string name="event_time_type">Event Time</string>
+
+    <string name="distance_slider_label">Within Walking Distance</string>
+
+    <!--Strings for Login and Sign in Page-->
+    <string name="title_activity_login_screen">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="notifications">Notifications</string>
+    <string name="location_services">Location Services</string>
+    <string name="update_password">Update Password</string>
+    <string name="permissions">Permissions</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="account">Account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="create_account">Create Account</string>
+    <string name="no_account_create_one_now">No account? Create one now!</string>
+    <string name="email">Email</string>
+
+    <!--Strings for Search Results Fragments-->
+    <string name="no_results_message">Bummer! There are no events meeting those criteria. Try
+        again!</string>
+    
+    <!--Strings for My Events-->
+    <string name="saved_events_title">Saved Events</string>
+    <string name="created_events_title">Created Events</string>
+    <string name="event_title">Grainger Engineering Career Fair</string>
+    <string name="event_day">December 1</string>
+    <string name="event_time">12:30 p.m</string>
+    <string name="event_location">Siebel 2345</string>
+    <string name="delete_action">Delete</string>
+    <string name="edit_action">Edit</string>
+    <string name="more_info">View Info</string>
+    <string name="delete_event">Delete Event</string>
+
+    <!--Strings for Event Info Popups-->
+    <string name="event_info_title">Event Info</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pick_image_intent_text">Pick from...</string>
+</resources>
+
